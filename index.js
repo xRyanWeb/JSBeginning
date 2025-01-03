@@ -26,10 +26,17 @@ class Main {
 
 }
 
-
 let firstName = "Ryan";
 let lastName = "James";
-let fullName = firstName + " " + lastName;
+
+const person = {
+    firstName: firstName,
+    lastName: lastName,
+    // fullName: fullName
+}
+
+let fullName = person.firstName + " " + person.lastName;
+
 
 const myName = new Main(firstName, lastName);
 myName.getCommands();
